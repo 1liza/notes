@@ -109,7 +109,8 @@ useBuiltIns配置实现根据业务代码添加变量和函数，减少mian.js�
 .babelrc文件是babel文件的配置文件
 
 #### 3.11 react代码打包
-未看
+ preset-react
+ 
 
 ### 4
 
@@ -189,6 +190,28 @@ DefinitelyTyped github
 
 #### 5.4 WebpackDevServer实现请求转发
 axios
+devServer提供的proxy解决跨域请求问题，线上环境无法作用
+复杂配置 secure bypass context index changeOrigin 
+
+#### 5.5 单页面应用路由
+react默认多页面
+historyApiFallBack
+函数跳转
+上线后无法实现，只能通过后端实现
+
+#### 5.6 5.7 eslint配置
+npx eslint --init
+npx eslint src
+更改规范 rules
+eslint-loader
+
+
+#### 5.8 提升打包速度
+1. 升级版本 node npm yarn
+2. 在尽可能少的模块上使用loader（exclude include）
+3. plugin精简并确定可靠
+
+#### 5.9 resolve参数合理配置
 
 
 ## 进阶
